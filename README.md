@@ -15,4 +15,4 @@ Inspired from this blogpost by Nicola Paolucci https://www.atlassian.com/git/tut
 
 Install config tracking in your $HOME by running:
 
-curl -Lks bit.do/config-install | /bin/bash curl -Lks https://bitbucket.org/durdn/cfg/raw/master/.bin/install.sh | /bin/bash
+curl -Lks https://raw.githubusercontent.com/alexg9010/dotfiles/master/dotfiles-install | bash
