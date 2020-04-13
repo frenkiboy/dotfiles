@@ -11,7 +11,7 @@ fi
 
 ## Alias
 
-# General Alias
+# General Aliases
 
 alias ls='ls -FG'
 alias ll='ls -aFGlh'
@@ -29,19 +29,6 @@ alias dfs='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 ## Functions
 
-### add powerline-shell status bar (https://github.com/b-ryan/powerline-shell)
-# function _update_ps1() {
-#     PS1=$(powerline-shell $?)
-# }
-# 
-# if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-#     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-# fi
-
-## Powerline-style Bash prompt (https://github.com/riobard/bash-powerline)
-source ~/.bash-powerline.sh
-
-
 ### add pyclean function
 pyclean () {
     find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
@@ -49,6 +36,8 @@ pyclean () {
 
 ## Folders
 METHYLKIT="/Users/agosdsc/Development/R/methylKit-dev/methylKit/"
+
+## Ssh
 
 ## Jupiter Notebook
 
@@ -64,8 +53,6 @@ function runJupiter {
 	echo "opening proxy port"
 	openPort
 }
-
-## Ssh
 
 # connections
 
@@ -120,6 +107,10 @@ fi
 if [ -f /usr/local/etc/bash_completion.d/.git-completion.bash ]; then
   . /usr/local/etc/bash_completion.d/.git-completion.bash
 fi
+
+## Powerline-style Bash prompt (https://github.com/riobard/bash-powerline)
+# curl https://raw.githubusercontent.com/riobard/bash-powerline/master/bash-powerline.sh > ~/.bash-powerline.sh
+source ~/.bash-powerline.sh
 
 
 ## Conda shell completion
