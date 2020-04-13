@@ -1,0 +1,14 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Alexander Blume
+#	email = alexander.blume@mdc-berlin.de
+[user]
+	name = alexg9010
+	email = alex.gos90@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	ls = log --pretty=format:\"%C(green)%h\\\\ %C(yellow)[%ad]%Cred%d\\\\ %Creset%s%Cblue\\\\ [%an]\" --decorate --date=relative
