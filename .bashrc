@@ -23,6 +23,7 @@ alias zcat="gunzip -c"
 
 alias cpd="$HOME/bin/pmd-bin-6.22.0/bin/run.sh cpd"
 
+## use git repo for tracking dotfiles (https://www.atlassian.com/git/tutorials/dotfiles)
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' 
 
 ## Functions
