@@ -12,3 +12,5 @@
 	ci = commit
 	st = status
 	ls = log --pretty=format:\"%C(green)%h\\\\ %C(yellow)[%ad]%Cred%d\\\\ %Creset%s%Cblue\\\\ [%an]\" --decorate --date=relative
+[branch]
+	autoSetupRebase = always
