@@ -1,0 +1,13 @@
+[alias]
+	adog = log --all --decorate --oneline --graph
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	ls = log --pretty=format:\"%C(green)%h\\\\ %C(yellow)[%ad]%Cred%d\\\\ %Creset%s%Cblue\\\\ [%an]\" --decorate --date=relative
+	cbr = rev-parse --abbrev-ref HEAD
+	unstage = reset HEAD --
+	tr = ls-tree --name-only
+	tracked = ls-tree --name-only
+[branch]
+	autoSetupRebase = always
