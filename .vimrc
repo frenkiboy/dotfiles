@@ -63,6 +63,7 @@ set clipboard=unnamed
 
 " ADD PACKAGE 'before VIM8' style
 " add vim-airline
+" from https://github.com/vim-airline/vim-airline
 set runtimepath^=~/.vim/pack/dist/start/vim-airline
 set runtimepath^=~/.vim/pack/dist/opt/vim-airline-themes
 let g:airline#extensions#tabline#enabled = 1
@@ -74,25 +75,18 @@ let mapleader = ","
 " add commentary for toggling comments
 set runtimepath^=~/.vim/pack/dist/start/commentary
 
+" add tabular for aligning text
+" https://github.com/godlygeek/tabular
+set runtimepath^=~/.vim/pack/dist/start/tabular/
+
 " add fugitive for optimized git
 set runtimepath^=~/.vim/pack/dist/start/vim-fugitive/
 set statusline=%{FugitiveStatusline()}
-
-" add easy-aling for text alignment
-set runtimepath^=~/.vim/pack/dist/start/vim-easy-align/
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
-let g:easy_align_delimiters = {
-\	'+': { 'pattern': '+'}
-\ }
-
-
 " modify statusline
 let g:airline#extensions#fugitiveline#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#branch#enabled = 1
+
 
 " add ale for syntax check
 " Set this. Airline will handle the rest.
