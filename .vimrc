@@ -35,8 +35,9 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 " Maintain undo history between sessions
 " Use persistent history.
-if !isdirectory("/home/agosdsc/.vim-undo-dir")
-    call mkdir("/home/agosdsc/.vim-undo-dir", "", 0700)
+if !isdirectory("~/.vim/undo")
+    call system('mkdir ' . '~/.vim/undo')
+	" call mkdir("~/.vim/undo", "", 0700)
 endif
 set undodir=~/.vim-undo-dir
 set undofile
