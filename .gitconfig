@@ -30,6 +30,6 @@
 [gpg]
 	program = gpg2
 [push]
-	default = matching
+	default = current
 [pull]
-	default = matching
+	default = current
