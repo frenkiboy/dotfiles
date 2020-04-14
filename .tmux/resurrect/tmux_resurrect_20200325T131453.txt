@@ -1,0 +1,47 @@
+pane	animesh	1	:/home/agosdsc>ssh	1	:*Z	0	:/data/local/agosdsc/projects/Animesh_bsseq/pigx-bsseq-results/04_mapping	0	bash	:
+pane	animesh	1	:/home/agosdsc>ssh	1	:*Z	1	:/data/local/agosdsc/projects/Animesh_bsseq/pigx-bsseq-results	0	bash	:
+pane	animesh	1	:/home/agosdsc>ssh	1	:*Z	2	:/data/local/agosdsc/projects/Animesh_bsseq/pigx-bsseq-results/04_mapping	1	htop	:htop
+pane	anna	0	:/home/agosdsc/p>bash	1	:*	0	:/home/agosdsc/projects	0	bash	:
+pane	anna	0	:/home/agosdsc/p>bash	1	:*	1	:/fast/AG_Tursun/agosdsc/projects/anna_coelomocytes	0	bash	:
+pane	anna	0	:/home/agosdsc/p>bash	1	:*	2	:/fast/AG_Tursun/Anna/coelomocyte	1	bash	:
+pane	anna	1	:/fast/AG_Tursun>ssh	0	:-	0	:/fast/AG_Tursun/agosdsc/projects/anna_coelomocytes	1	bash	:
+pane	bsseq	0	:/home/agosdsc/p>bash	1	:*	0	:/home/agosdsc/projects/pigx/pigx_bsseq	0	bash	:
+pane	bsseq	0	:/home/agosdsc/p>bash	1	:*	1	:/home/agosdsc/projects/pigx/pigx_bsseq	1	bash	:
+pane	bsseq	1	:/fast/home/a/ag>bash	0	:-	0	:/fast/home/a/agosdsc/projects/pigx/pigx_bsseq	1	bash	:
+pane	chipseq	0	:/home/agosdsc/p>bash	1	:*	0	:/home/agosdsc/projects/pigx/pigx_chipseq	1	bash	:/bin/bash --init-file /home/agosdsc/projects/pigx/pigx_chipseq/.guix-profile/etc/profile
+pane	chipseq	0	:/home/agosdsc/p>bash	1	:*	1	:/home/agosdsc/projects/pigx/pigx_chipseq	0	watch	:watch tree -L 1 Tests/out
+pane	iris	0	:/data/local>htop	1	:*	0	:/data/local	0	bash	:
+pane	iris	0	:/data/local>htop	1	:*	1	:/data/local	1	htop	:htop
+pane	minion	0	:/home/agosdsc>bash	0	:-	0	:/home/agosdsc	1	bash	:
+pane	minion	3	:/data/local/ago>bash	1	:*	0	:/home/agosdsc/projects	0	bash	:
+pane	minion	3	:/data/local/ago>bash	1	:*	1	:/home/agosdsc/projects	0	bash	:
+pane	minion	3	:/data/local/ago>bash	1	:*	2	:/home/agosdsc/projects/test_guppy	0	htop	:htop
+pane	minion	3	:/data/local/ago>bash	1	:*	3	:/data/local/agosdsc/projects/mrg1_nanopore/Raw	1	bash	:
+pane	selman-tsc	0	:/fast/AG_Tursun>bash	0	:	0	:/home/agosdsc/projects/selman_tissueSpecificChipseq	0	vim	:vim scripts/runIntervene_HIS72.sh
+pane	selman-tsc	0	:/fast/AG_Tursun>bash	0	:	1	:/home/agosdsc/projects/selman_tissueSpecificChipseq/scripts	0	bash	:
+pane	selman-tsc	0	:/fast/AG_Tursun>bash	0	:	2	:/fast/AG_Tursun/agosdsc/projects/selman_tissueSpecificChipseq/HIS_72/Intervene_results/venn/Neuron	0	bash	:
+pane	selman-tsc	0	:/fast/AG_Tursun>bash	0	:	3	:/fast/AG_Tursun/agosdsc/projects/selman_tissueSpecificChipseq/HIS_72	1	bash	:
+pane	selman-tsc	1	:/fast/AG_Tursun>bash	0	:-	0	:/fast/AG_Tursun/agosdsc/projects/selman_tissueSpecificChipseq/HIS_72/Intervene_results/venn/Neuron	1	bash	:
+pane	selman-tsc	2	:/home/agosdsc/p>bash	0	:	0	:/home/agosdsc/projects/selman_tissueSpecificChipseq	0	vim	:vim scripts/runMeme.sh
+pane	selman-tsc	2	:/home/agosdsc/p>bash	0	:	1	:/home/agosdsc/projects/selman_tissueSpecificChipseq	0	bash	:
+pane	selman-tsc	2	:/home/agosdsc/p>bash	0	:	2	:/fast/AG_Tursun/agosdsc/projects/selman_tissueSpecificChipseq/HIS_72	1	bash	:
+pane	selman-tsc	3	:/fast/AG_Tursun>bash	0	:	0	:/home/agosdsc/projects/selman_tissueSpecificChipseq	0	vim	:vim scripts/runGimmeMotifs.sh
+pane	selman-tsc	3	:/fast/AG_Tursun>bash	0	:	1	:/home/agosdsc/projects/selman_tissueSpecificChipseq	0	bash	:
+pane	selman-tsc	3	:/fast/AG_Tursun>bash	0	:	2	:/fast/AG_Tursun/agosdsc/projects/selman_tissueSpecificChipseq/HIS_72	0	bash	:
+pane	selman-tsc	3	:/fast/AG_Tursun>bash	0	:	3	:/fast/AG_Tursun/agosdsc/projects/selman_tissueSpecificChipseq/HIS_72	1	bash	:
+pane	selman-tsc	4	:/fast/AG_Tursun>less	1	:*	0	:/fast/AG_Tursun/SELMAN/HTZ_1/CRISPR&FOSMID_actual/CRISPR_HTZ_1/ChIP_results_w_substruction_wo_outlyer/DiffBind	1	bash	:less /fast/AG_Tursun/SELMAN/HTZ_1/CRISPR
+window	animesh	1	1	:*Z	d40d,204x51,0,0{103x51,0,0[103x25,0,0,1,103x25,0,26,2],100x51,104,0,3}
+window	anna	0	1	:*	0519,204x51,0,0{101x51,0,0,4,102x51,102,0[102x25,102,0,5,102x25,102,26,6]}
+window	anna	1	0	:-	b2a4,204x51,0,0,7
+window	bsseq	0	1	:*	f5e8,204x51,0,0[204x22,0,0,8,204x28,0,23,9]
+window	bsseq	1	0	:-	597f,204x51,0,0,10
+window	chipseq	0	1	:*	fcad,272x62,0,0{135x62,0,0,39,136x62,136,0,40}
+window	iris	0	1	:*	6ded,204x51,0,0{101x51,0,0,11,102x51,102,0,12}
+window	minion	0	0	:-	5987,204x51,0,0,18
+window	minion	3	1	:*	d8b8,204x51,0,0{102x51,0,0[102x25,0,0,19,102x25,0,26,20],101x51,103,0[101x21,103,0,21,101x29,103,22,22]}
+window	selman-tsc	0	0	:	b68e,204x51,0,0{113x51,0,0[113x25,0,0,23,113x25,0,26,24],90x51,114,0[90x24,114,0,25,90x26,114,25,26]}
+window	selman-tsc	1	0	:-	d986,204x51,0,0,27
+window	selman-tsc	2	0	:	2ce2,204x51,0,0{100x51,0,0[100x26,0,0,28,100x24,0,27,29],103x51,101,0,30}
+window	selman-tsc	3	0	:	2df8,204x51,0,0{101x51,0,0[101x26,0,0,31,101x24,0,27,32],102x51,102,0[102x26,102,0,33,102x24,102,27,34]}
+window	selman-tsc	4	1	:*	5985,204x51,0,0,35
+state	chipseq	
