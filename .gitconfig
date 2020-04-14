@@ -1,10 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-#	name = Alexander Blume
-#	email = alexander.blume@mdc-berlin.de
-[user]
-	name = alexg9010
+	name = Alexander Blume
 	email = alex.gos90@gmail.com
 [alias]
 	co = checkout
@@ -14,5 +10,9 @@
 	ls = log --pretty=format:\"%C(green)%h\\\\ %C(yellow)[%ad]%Cred%d\\\\ %Creset%s%Cblue\\\\ [%an]\" --decorate --date=relative
 	assume-unchanged = update-index --assume-unchanged
 	assume-changed = update-index --no-assume-unchanged
+	cbr = rev-parse --abbrev-ref HEAD
+	unstage = reset HEAD --
+	tr = ls-tree --name-only
+	tracked = ls-tree --name-only
 [branch]
 	autoSetupRebase = always
