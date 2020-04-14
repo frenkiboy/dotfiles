@@ -10,3 +10,7 @@ if [ -f ~/.bashrc ]; then
         . ~/.bashrc
 fi
 
+
+# export proper locale
+export LC_ALL=en_US.UTF-8
+
