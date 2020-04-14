@@ -29,3 +29,7 @@
 	autoSetupRebase = always
 [gpg]
 	program = gpg2
+[push]
+	default = matching
+[pull]
+	default = matching
