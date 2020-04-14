@@ -1,3 +1,17 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Alexander Blume
+	email = alex.gos90@gmail.com
+[color]
+	ui = auto
+	branch = auto
+	diff = auto
+	status = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [alias]
 	adog = log --all --decorate --oneline --graph
 	co = checkout
@@ -13,3 +27,5 @@
 	tracked = ls-tree --name-only
 [branch]
 	autoSetupRebase = always
+[gpg]
+	program = gpg2
