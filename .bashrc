@@ -112,6 +112,10 @@ fi
 # curl https://raw.githubusercontent.com/riobard/bash-powerline/master/bash-powerline.sh > ~/.bash-powerline.sh
 source ~/.bash-powerline.sh
 
+# fix gpg issue
+GPG_TTY=$(tty)
+export GPG_TTY
+
 
 ## Conda shell completion
 if [ -f /Users/agosdsc/miniconda3/etc/profile.d/conda.sh ]; then
