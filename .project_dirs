@@ -1,0 +1,15 @@
+# .project_dirs
+
+#############################################
+##  set paths to heavily used projects     ##
+#############################################
+
+# Pigx chipseq
+P_CHIPSEQ="/home/agosdsc/projects/pigx/pigx_chipseq/"
+
+# Pigx bsseq
+P_BSSEQ="/home/agosdsc/projects/pigx/pigx_bsseq/"
+
+# animesh bsseq lymphoma
+ANIMESH="/home/agosdsc/projects/Animesh_bsseq/"
+ANIMESH_DATA="/data/local/agosdsc/projects/Animesh_bsseq/"

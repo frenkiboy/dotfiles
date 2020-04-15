@@ -5,6 +5,13 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Project Paths
+# Heavily used project paths can be defined here,
+# to provide a shortcut.
+if [ -f ~/.project_dirs ]; then
+	    . ~/.project_dirs
+fi
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
