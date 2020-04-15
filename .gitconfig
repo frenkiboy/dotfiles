@@ -27,8 +27,6 @@
 	tracked = ls-tree --name-only
 [branch]
 	autoSetupRebase = always
-[gpg]
-	program = gpg2
 [push]
 	default = current
 [pull]
