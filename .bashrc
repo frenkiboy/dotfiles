@@ -134,4 +134,29 @@ _completemarks() {
 
 complete -F _completemarks jump unmark
 
+# ------------------------------------- #
+### Functions
+function makebwlinks {
+        dir=`pwd`
+        prefix='http://bimsbstatic.mdc-berlin.de/akalin'
+        name=`echo $dir | perl -pe "s|^.+akalin||"`
+         if [ -e links.txt ];then
+                 rm links.txt
+         fi
+         for i in `ls $dir | grep -v links.txt`;do
+         filename=`basename $i .bw`
+         echo $i | perl -pne "s|^|track type=bigWig name=\"$filename\" bigDataUrl=$prefix/$name/|" | perl -pe 's|$|"|;s|Url=|Url="|'  >> links.txt
+         done
+
+ }
+
+
+function gitprompt {
+    source /home/vfranke/bin/Software/Bash/git-prompt/git-prompt
+}
+
+function changepath {
+        export PATH='/usr/local/bin:/usr/bin'
+}
+
 
