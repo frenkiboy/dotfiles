@@ -13,15 +13,43 @@ fi
 
 # General Aliases
 
+alias bget='wget --background'
+alias c="clear"
+alias dater="date +%y%m%d"
+alias gp='guixr package'
+alias ds='du -sh'
+alias dss="ls | xargs du -sh"
+
+alias l="ls -lh"
+alias la="ls -lha"
+alias lsd="ls -lhd */"
 alias ls='ls -FG'
 alias ll='ls -aFGlh'
+alias mdkir="mkdir"
 alias ..='cd ..'
 alias ...='cd ../..'
 alias grep='grep --color="auto"'
-stty -ixon
+alias q="qstat -u vfranke"
+alias R="/usr/bin/R"
+alias pp='perl -pi -e "s|net|de|"'
+alias rename="$MYLIB/Perl/r"
+alias scd="cd"
+alias sbr="source ~/.bashrc"
+alias sl="ls"
+alias setpath="pwd >> /.paths"
+alias tt="tmux a -t"
+alias wcl="wc -l"
+alias gg='guixr'
+alias ggp='guixr package'
 alias zcat="gunzip -c"
 
-alias cpd="$HOME/bin/pmd-bin-6.22.0/bin/run.sh cpd"
+alias beast="ssh beast.mdc-berlin.net"
+alias cheku="ssh 141.80.186.199"
+alias galaxy="ssh galaxy-dev.mdc-berlin.net"
+alias max='ssh max-login'
+alias shiny='ssh shiny.mdc-berlin.net'
+alias static="ssh vfranke@bimsbstatic.mdc-berlin.net"
+
 
 ## use git repo for tracking dotfiles (https://www.atlassian.com/git/tutorials/dotfiles)
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' 
@@ -35,15 +63,10 @@ pyclean () {
 }
 
 ## Folders
-METHYLKIT="/Users/agosdsc/Development/R/methylKit-dev/methylKit/"
 
 ## Ssh
 
 ## Jupiter Notebook
-
-alias openPort='ssh -D localhost:54321 agosdsc@hulk.mdc-berlin.net'
-alias chromiumProxy="open -na '/Applications/Chromium.app/' --args --proxy-server='socks5://localhost:54321' --temp-profile --profile-directory=‘~/Tmp’ --user-data-dir='/Users/agosdsc/Tmp'"
-
 function runJupiter {
 	echo "starting chromium with proxy setup"
 	chromiumProxy
@@ -54,33 +77,6 @@ function runJupiter {
 	openPort
 }
 
-# connections
-
-alias tunnel2mdc='ssh -vND localhost:8080 max-login.mdc-berlin.net'
-alias tunnel2beast='ssh -vND localhost:8080 hulk.mdc-berlin.net'
-alias beast='ssh agosdsc@beast.mdc-berlin.net'
-alias xbeast='ssh -Y -C agosdsc@beast.mdc-berlin.net'
-alias hulk='ssh agosdsc@hulk.mdc-berlin.net'
-alias xhulk='ssh -Y -C agosdsc@hulk.mdc-berlin.net'
-alias doublehop='ssh -D 8765:localhost:8765 agosdsc@ssh1.mdc-berlin.de "ssh -C -D 8765 agosdsc@bimsb-beast"'
-alias minion='ssh agosdsc@cl-tursun21.mdc-berlin.net'
-
-
-# folder mounting
-
-alias dockclusterhome='sshfs -o reconnect -o follow_symlinks -o IdentityFile=~/.ssh/beast_id_rsa agosdsc@beast.mdc-berlin.net:/clusterhome/agosdsc ~/Desktop/Clustershares/clusterhome -o volname=clusterhome'
-alias docktursundata='sshfs -o reconnect -o follow_symlinks -o IdentityFile=~/.ssh/beast_id_rsa agosdsc@max-login.mdc-berlin.net:/data/tursun ~/Desktop/Clustershares/tursundata -o volname=tursundata'
-alias dockakalindata='sshfs -o reconnect -o follow_symlinks -o IdentityFile=~/.ssh/beast_id_rsa agosdsc@max-login.mdc-berlin.net:/data/akalin ~/Desktop/Clustershares/akalindata -o volname=akalindata'
-
-alias docktursunfast='sshfs -o reconnect -o follow_symlinks -o IdentityFile=~/.ssh/beast_id_rsa agosdsc@max-login.mdc-berlin.net:/fast/AG_Tursun ~/Desktop/Clustershares/tursunfast -o volname=tursunfast'
-alias dockakalinfast='sshfs -o reconnect -o follow_symlinks -o IdentityFile=~/.ssh/beast_id_rsa agosdsc@max-login.mdc-berlin.net:/fast/AG_Akalin ~/Desktop/Clustershares/akalinfast -o volname=akalinfast'
-
-alias docklocalhome='sshfs -o reconnect -o follow_symlinks -o IdentityFile=~/.ssh/beast_id_rsa agosdsc@beast.mdc-berlin.net:/home/agosdsc ~/Desktop/Clustershares/localhome -o volname=localhome'
-alias docklocaldata='sshfs -o reconnect -o follow_symlinks -o IdentityFile=~/.ssh/beast_id_rsa agosdsc@beast.mdc-berlin.net:/data/local ~/Desktop/Clustershares/localdata -o volname=localdata'
-
-alias dockfast='sshfs -o reconnect -o follow_symlinks -o IdentityFile=~/.ssh/beast_id_rsa agosdsc@max-login.mdc-berlin.net:/fast/ ~/Desktop/Clustershares/fast -o volname=fast'
-
-alias dockminion='sshfs -o reconnect -o follow_symlinks -o IdentityFile=~/.ssh/beast_id_rsa agosdsc@cl-tursun21:/ /Users/agosdsc/Desktop/Clustershares/minion/ -o volname=minion'
 
 ## Bash History
 
@@ -113,24 +109,3 @@ fi
 source ~/.bash-powerline.sh
 
 
-## Conda shell completion
-if [ -f /Users/agosdsc/miniconda3/etc/profile.d/conda.sh ]; then
-  . /Users/agosdsc/miniconda3/etc/profile.d/conda.sh
-fi
-
-# added by Anaconda3 2019.10 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/agosdsc/opt/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/Users/agosdsc/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/agosdsc/opt/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/Users/agosdsc/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
