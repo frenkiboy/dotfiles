@@ -1,0 +1,11 @@
+# Editor / OS noise
+*.swp
+*.swo
+.DS_Store
+
+# Anything backup-related the installer might leave
+*.backup-*
+
+# Vim plugin sources are managed by vim-plug, not tracked here
+vim/plugged/
+vim/.netrwhist

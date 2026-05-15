@@ -1,0 +1,16 @@
+[credential]
+	helper = cache
+[user]
+	name = frenkiboy
+	email = vedran.franke@gmail.com
+[core]
+	editor = vim
+[submodule]
+	recurse = true
+[cretential]
+	helper = store
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
