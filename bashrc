@@ -31,7 +31,7 @@ test -s ~/.alias && . ~/.alias || true
 # ------------------------------------- #
 ### ALL EXPORTS ARE IN ~/.bashvars
 # variables
-source $HOME/.bashvars
+[ -f "$HOME/.bashvars" ] && source "$HOME/.bashvars"
 
 shopt -s checkwinsize
 
@@ -107,7 +107,9 @@ complete -F _completemarks jump unmark
 
 
 # direnv hook
-eval "$(direnv hook bash)"
+if command -v direnv >/dev/null 2>&1; then
+    eval "$(direnv hook bash)"
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
