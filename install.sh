@@ -8,7 +8,7 @@ DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 STAMP="$(date +%Y%m%d-%H%M%S)"
 
 # bare-name -> $HOME/.bare-name
-FILES=(bashrc bash_profile profile vimrc tmux.conf gitconfig inputrc)
+FILES=(bashrc bash_profile profile vimrc tmux.conf gitconfig)
 
 link() {
   local src="$1" dst="$2"

@@ -5,7 +5,7 @@ set -euo pipefail
 
 DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-FILES=(bashrc bash_profile profile vimrc tmux.conf gitconfig inputrc)
+FILES=(bashrc bash_profile profile vimrc tmux.conf gitconfig)
 
 unlink_if_ours() {
   local dst="$1" src="$2"
